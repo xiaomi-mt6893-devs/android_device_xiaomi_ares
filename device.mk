@@ -43,3 +43,7 @@ PRODUCT_PACKAGES += \
 # Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
+
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
