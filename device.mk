@@ -47,3 +47,7 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
+
+# Init scripts
+PRODUCT_PACKAGES += \
+    init.mt6893.rc
