@@ -7,6 +7,8 @@
 DEVICE_PATH := device/xiaomi/ares
 PREBUILT_PATH := device/xiaomi/ares-prebuilt
 
+BOARD_VENDOR := xiaomi
+
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
