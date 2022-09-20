@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/xiaomi/ares
+PREBUILT_PATH := device/xiaomi/ares-prebuilt
 
 # A/B
 AB_OTA_UPDATER := true
