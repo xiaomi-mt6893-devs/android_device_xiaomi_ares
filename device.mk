@@ -54,3 +54,10 @@ PRODUCT_PACKAGES += \
 # Init scripts
 PRODUCT_PACKAGES += \
     init.mt6893.rc
+
+# Fstab
+PRODUCT_PACKAGES += \
+    fstab.mt6893
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6893:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6893
