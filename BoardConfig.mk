@@ -120,3 +120,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 
 # Treble
 BOARD_VNDK_VERSION := current
+
+# Inherit from proprietary files
+include vendor/xiaomi/ares/BoardConfigVendor.mk
