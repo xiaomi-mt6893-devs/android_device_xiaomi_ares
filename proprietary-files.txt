@@ -125,11 +125,6 @@ vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/libbluetooth_audio_session.so
 vendor/lib64/libbluetooth_audio_session_mediatek.so
 
-# Boot
-vendor/bin/hw/android.hardware.boot@1.2-service
-vendor/etc/init/android.hardware.boot@1.2-service.rc
-vendor/etc/vintf/manifest/android.hardware.boot@1.2.xml
-
 # Camera configs
 vendor/etc/camera/jiiganmodel/fusion_models/fusion_cache
 vendor/etc/camera/jiiganmodel/fusion_models/fusion_mecp.bin
@@ -364,23 +359,18 @@ vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 
 # DRM
-vendor/bin/hw/android.hardware.drm@1.4-service.clearkey
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
-vendor/etc/init/android.hardware.drm@1.4-service.clearkey.rc
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib/mediacas/libclearkeycasplugin.so
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libmockdrmcryptoplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/liboemcrypto.so
 vendor/lib/libwvhidl.so
 vendor/lib64/mediacas/libclearkeycasplugin.so
 vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 vendor/lib64/mediadrm/libmockdrmcryptoplugin.so
 vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib64/liboemcrypto.so
 vendor/lib64/libwvhidl.so
 
 # Dumpstate
@@ -427,11 +417,6 @@ vendor/lib64/libimsg_log.so
 vendor/bin/hw/android.hardware.gnss-service.mediatek
 vendor/etc/init/android.hardware.gnss-service.mediatek.rc
 
-# Health
-vendor/bin/hw/android.hardware.health@2.1-service
-vendor/etc/init/android.hardware.health@2.1-service.rc
-vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
-
 # IR
 vendor/bin/hw/android.hardware.ir@1.0-service
 vendor/etc/init/android.hardware.ir@1.0-service.rc
@@ -446,9 +431,6 @@ vendor/bin/hw/android.hardware.keymaster@4.0-service.mitee
 vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc
 vendor/etc/init/android.hardware.keymaster@4.0-service.mitee.rc
 vendor/lib64/libkeymaster4.so
-
-# Light
-vendor/bin/hw/android.hardware.lights-service.mediatek
 
 # Local time
 vendor/lib/hw/local_time.default.so
@@ -895,8 +877,6 @@ vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
-vendor/bin/hw/vendor.microtrust.hardware.soter@1.0-service
-vendor/bin/hw/vendor.microtrust.hardware.thh@2.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.dtool@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service
@@ -1217,8 +1197,6 @@ vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
-vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc
-vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.dtool@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc
@@ -2521,16 +2499,10 @@ vendor/lib/gc02m1sunny_mipi_raw_tuning.so
 vendor/lib/imx355sunny_mipi_raw_tuning.so
 vendor/lib/lib3a.af.assist.models.so
 vendor/lib/lib3a.aishutter.models.so
-vendor/lib/libAVCSecureVencCA.so
-vendor/lib/libCamera_gc02m1sunnymipiraw_Color_Enhance_Capture.so
 vendor/lib/libCamera_gc02m1sunnymipiraw_Flash_Capture.so
 vendor/lib/libCamera_gc02m1sunnymipiraw_Scene_Capture.so
-vendor/lib/libCamera_gc02m1sunnymipiraw_Scene_Capture_Zoom1.so
-vendor/lib/libCamera_gc02m1sunnymipiraw_Scene_Capture_Zoom2.so
 vendor/lib/libCamera_gc02m1sunnymipiraw_Scene_Preview.so
-vendor/lib/libCamera_gc02m1sunnymipiraw_Scene_Professional_Capture.so
 vendor/lib/libCamera_gc02m1sunnymipiraw_Video.so
-vendor/lib/libCamera_imx355sunnymipiraw_3rd_Capture.so
 vendor/lib/libCamera_imx355sunnymipiraw_3rd_Preview.so
 vendor/lib/libCamera_imx355sunnymipiraw_3rd_Video.so
 vendor/lib/libCamera_imx355sunnymipiraw_EIS_Video_1080P.so
@@ -2540,9 +2512,7 @@ vendor/lib/libCamera_imx355sunnymipiraw_EIS_Video_720P.so
 vendor/lib/libCamera_imx355sunnymipiraw_EIS_Video_720P_Zoom1.so
 vendor/lib/libCamera_imx355sunnymipiraw_EIS_Video_720P_Zoom2.so
 vendor/lib/libCamera_imx355sunnymipiraw_Face_Capture.so
-vendor/lib/libCamera_imx355sunnymipiraw_Face_Capture_CE.so
 vendor/lib/libCamera_imx355sunnymipiraw_Face_Preview.so
-vendor/lib/libCamera_imx355sunnymipiraw_Face_Preview_CE.so
 vendor/lib/libCamera_imx355sunnymipiraw_Flash_Capture.so
 vendor/lib/libCamera_imx355sunnymipiraw_HDR_Face_Capture.so
 vendor/lib/libCamera_imx355sunnymipiraw_HDR_Scene_Capture.so
@@ -2554,11 +2524,9 @@ vendor/lib/libCamera_imx355sunnymipiraw_Professional_Capture.so
 vendor/lib/libCamera_imx355sunnymipiraw_Professional_Preview.so
 vendor/lib/libCamera_imx355sunnymipiraw_QQWechat_VideoCall.so
 vendor/lib/libCamera_imx355sunnymipiraw_Scene_Capture.so
-vendor/lib/libCamera_imx355sunnymipiraw_Scene_Capture_CE.so
 vendor/lib/libCamera_imx355sunnymipiraw_Scene_Capture_Zoom1.so
 vendor/lib/libCamera_imx355sunnymipiraw_Scene_Capture_Zoom2.so
 vendor/lib/libCamera_imx355sunnymipiraw_Scene_Preview.so
-vendor/lib/libCamera_imx355sunnymipiraw_Scene_Preview_CE.so
 vendor/lib/libCamera_imx355sunnymipiraw_Scene_Preview_Zoom1.so
 vendor/lib/libCamera_imx355sunnymipiraw_Scene_Preview_Zoom2.so
 vendor/lib/libCamera_imx355sunnymipiraw_SuperNightRaw_Capture.so
@@ -2569,7 +2537,6 @@ vendor/lib/libCamera_imx355sunnymipiraw_Video_1080P_Zoom2.so
 vendor/lib/libCamera_imx355sunnymipiraw_Video_720P.so
 vendor/lib/libCamera_imx355sunnymipiraw_Video_720P_Zoom1.so
 vendor/lib/libCamera_imx355sunnymipiraw_Video_720P_Zoom2.so
-vendor/lib/libCamera_imx355sunnymipiraw_portrait_capture_full.so
 vendor/lib/libCamera_ov16a1qofilmmipiraw_3rd_Capture.so
 vendor/lib/libCamera_ov16a1qofilmmipiraw_3rd_Preview.so
 vendor/lib/libCamera_ov16a1qofilmmipiraw_3rd_Video.so
@@ -2846,15 +2813,12 @@ vendor/lib/libteei_daemon_vfs.so
 vendor/lib/libtflite_mtk.so
 vendor/lib/libthermalalgo.so
 vendor/lib/libthha.so
-vendor/lib/libthhclient.so
 vendor/lib/libtida_isee@1.1.so
 vendor/lib/libtida_mitee@1.1.so
-vendor/lib/libtlcWidevineModularDrm.so
 vendor/lib/libtranslator_mapi_v3.0.so
 vendor/lib/libtranslator_mdmi_v2.8.2.so
 vendor/lib/libtranslator_utils.so
 vendor/lib/libudf.so
-vendor/lib/liburee_meta_drmkeyinstall.so
 vendor/lib/libvc1dec_sa.ca7.so
 vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodec_utility.so
@@ -2940,10 +2904,6 @@ vendor/lib64/APUWareApusysServer.so
 vendor/lib64/APUWareHmpServer.so
 vendor/lib64/APUWareUtilsServer.so
 vendor/lib64/APUWareXrpServer_v2.so
-vendor/lib64/AV1SecureVdecCA.so
-vendor/lib64/AVCSecureVdecCA.so
-vendor/lib64/HEVCSecureVdecCA.so
-vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/arm.graphics-ndk_platform.so
 vendor/lib64/com.fingerprints.extension@3.0.so
 vendor/lib64/com.xiaomi.plugin.capbokeh.so
@@ -2995,14 +2955,9 @@ vendor/lib64/lib3a.n3d3a.so
 vendor/lib64/lib3a.sensors.color.so
 vendor/lib64/lib3a.sensors.flicker.so
 vendor/lib64/libAVCSecureVencCA.so
-vendor/lib64/libCamera_gc02m1sunnymipiraw_Color_Enhance_Capture.so
 vendor/lib64/libCamera_gc02m1sunnymipiraw_Flash_Capture.so
 vendor/lib64/libCamera_gc02m1sunnymipiraw_Scene_Capture.so
-vendor/lib64/libCamera_gc02m1sunnymipiraw_Scene_Capture_Zoom1.so
-vendor/lib64/libCamera_gc02m1sunnymipiraw_Scene_Capture_Zoom2.so
 vendor/lib64/libCamera_gc02m1sunnymipiraw_Scene_Preview.so
-vendor/lib64/libCamera_gc02m1sunnymipiraw_Scene_Professional_Capture.so
-vendor/lib64/libCamera_gc02m1sunnymipiraw_Video.so
 vendor/lib64/libCamera_imx355sunnymipiraw_3rd_Capture.so
 vendor/lib64/libCamera_imx355sunnymipiraw_3rd_Preview.so
 vendor/lib64/libCamera_imx355sunnymipiraw_3rd_Video.so
@@ -3013,9 +2968,7 @@ vendor/lib64/libCamera_imx355sunnymipiraw_EIS_Video_720P.so
 vendor/lib64/libCamera_imx355sunnymipiraw_EIS_Video_720P_Zoom1.so
 vendor/lib64/libCamera_imx355sunnymipiraw_EIS_Video_720P_Zoom2.so
 vendor/lib64/libCamera_imx355sunnymipiraw_Face_Capture.so
-vendor/lib64/libCamera_imx355sunnymipiraw_Face_Capture_CE.so
 vendor/lib64/libCamera_imx355sunnymipiraw_Face_Preview.so
-vendor/lib64/libCamera_imx355sunnymipiraw_Face_Preview_CE.so
 vendor/lib64/libCamera_imx355sunnymipiraw_Flash_Capture.so
 vendor/lib64/libCamera_imx355sunnymipiraw_HDR_Face_Capture.so
 vendor/lib64/libCamera_imx355sunnymipiraw_HDR_Scene_Capture.so
@@ -3027,11 +2980,8 @@ vendor/lib64/libCamera_imx355sunnymipiraw_Professional_Capture.so
 vendor/lib64/libCamera_imx355sunnymipiraw_Professional_Preview.so
 vendor/lib64/libCamera_imx355sunnymipiraw_QQWechat_VideoCall.so
 vendor/lib64/libCamera_imx355sunnymipiraw_Scene_Capture.so
-vendor/lib64/libCamera_imx355sunnymipiraw_Scene_Capture_CE.so
-vendor/lib64/libCamera_imx355sunnymipiraw_Scene_Capture_Zoom1.so
 vendor/lib64/libCamera_imx355sunnymipiraw_Scene_Capture_Zoom2.so
 vendor/lib64/libCamera_imx355sunnymipiraw_Scene_Preview.so
-vendor/lib64/libCamera_imx355sunnymipiraw_Scene_Preview_CE.so
 vendor/lib64/libCamera_imx355sunnymipiraw_Scene_Preview_Zoom1.so
 vendor/lib64/libCamera_imx355sunnymipiraw_Scene_Preview_Zoom2.so
 vendor/lib64/libCamera_imx355sunnymipiraw_SuperNightRaw_Capture.so
@@ -3042,7 +2992,6 @@ vendor/lib64/libCamera_imx355sunnymipiraw_Video_1080P_Zoom2.so
 vendor/lib64/libCamera_imx355sunnymipiraw_Video_720P.so
 vendor/lib64/libCamera_imx355sunnymipiraw_Video_720P_Zoom1.so
 vendor/lib64/libCamera_imx355sunnymipiraw_Video_720P_Zoom2.so
-vendor/lib64/libCamera_imx355sunnymipiraw_portrait_capture_full.so
 vendor/lib64/libCamera_ov16a1qofilmmipiraw_3rd_Capture.so
 vendor/lib64/libCamera_ov16a1qofilmmipiraw_3rd_Preview.so
 vendor/lib64/libCamera_ov16a1qofilmmipiraw_3rd_Video.so
@@ -3534,16 +3483,13 @@ vendor/lib64/libteeclientjni_isee@1.1.so
 vendor/lib64/libteei_daemon_vfs.so
 vendor/lib64/libtflite_mtk.so
 vendor/lib64/libthha.so
-vendor/lib64/libthhclient.so
 vendor/lib64/libtida_isee@1.1.so
 vendor/lib64/libtida_mitee@1.1.so
-vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/libtranslator_mapi_v3.0.so
 vendor/lib64/libtranslator_mdmi_v2.8.2.so
 vendor/lib64/libtranslator_utils.so
 vendor/lib64/libtrm.so
 vendor/lib64/libudf.so
-vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libvcodec_oal.so
 vendor/lib64/libvcodecdrv_header_stub.so
 vendor/lib64/libvia-ril.so
@@ -3571,7 +3517,6 @@ vendor/lib64/libwapi.so
 vendor/lib64/libwifitest.so
 vendor/lib64/libwpa_client.so
 vendor/lib64/libwpfa.so
-vendor/lib64/libwvkeybox.so
 vendor/lib64/libxmi_high_dynamic_range.so
 vendor/lib64/libz_stable.so
 vendor/lib64/meta_wifi_data.so
@@ -3621,8 +3566,6 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 vendor/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
-vendor/lib64/vendor.microtrust.hardware.soter@1.0.so
-vendor/lib64/vendor.microtrust.hardware.thh@2.0.so
 vendor/lib64/vendor.xiaomi.hardware.dtool@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so
@@ -3634,5 +3577,3 @@ vendor/odm/etc/vintf/manifest_dsds.xml
 vendor/odm/etc/vintf/manifest_qsqs.xml
 vendor/odm/etc/vintf/manifest_ss.xml
 vendor/odm/etc/vintf/manifest_tsts.xml
-vendor/odm/etc/ares.build.prop
-vendor/odm/etc/aresin.build.prop
